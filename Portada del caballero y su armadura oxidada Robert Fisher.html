@@ -3,95 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reseña - Documento</title>
+    <title>Reseña</title>
     <style>
-        /* Estilo de la página completa */
-        body {
-            background-color: #ffffff; /* Fondo blanco total */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
+        body { background: #ffffff; margin: 0; padding: 0; display: flex; justify-content: center; }
+        
+        .hoja { 
+            width: 100%; 
+            max-width: 750px; 
+            padding: 40px 25px; 
         }
 
-        /* La "Hoja" de texto */
-        .hoja-blanca {
-            width: 100%;
-            max-width: 850px; /* Ancho similar a una hoja carta */
-            padding: 80px 50px;
-            background-color: #ffffff;
-            min-height: 100vh;
+        .portada-doc { 
+            display: block; 
+            max-width: 250px; 
+            margin: 0 auto 30px; 
+            border-radius: 4px;
         }
 
-        /* La portada al inicio */
-        .portada-doc {
-            display: block;
-            max-width: 350px;
-            margin: 0 auto 60px auto;
-            border-radius: 2px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 2.8rem;
-            font-weight: bold;
-            text-align: left;
+        h1 { 
+            font-family: 'Georgia', serif; 
+            font-size: 2.2rem; 
+            text-align: center; 
             margin-bottom: 40px;
-            color: #000;
         }
 
-        /* El área donde escribirás el texto largo */
-        .contenido-texto {
-            font-family: 'Georgia', serif; /* Fuente tipo libro, cansa menos la vista */
-            font-size: 1.25rem;
-            line-height: 1.8;
+        /* ESTO ES LO QUE CORRIGE LOS ESPACIOS */
+        .texto-contenido { 
+            font-family: 'Georgia', serif; 
+            font-size: 1.2rem; 
+            line-height: 1.8; 
             color: #1a1a1a;
-            white-space: pre-wrap; /* Mantiene tus saltos de línea automáticamente */
-            text-align: left;
+            /* Esta línea es la clave: respeta espacios y saltos de línea */
+            white-space: pre-wrap; 
+            word-wrap: break-word;
         }
 
-        /* Estilo para las frases */
-        .frase {
+        .frase-especial {
             display: block;
-            margin: 40px 0;
-            padding-left: 30px;
-            border-left: 2px solid #000;
+            margin: 30px 0;
+            padding: 20px;
+            border-left: 3px solid #000;
+            background-color: #f9f9f9;
             font-style: italic;
-            font-size: 1.4rem;
-            color: #333;
+            /* También lo aplicamos aquí por si la frase es larga */
+            white-space: pre-wrap; 
         }
 
-        .volver {
-            text-decoration: none;
-            color: #aaa;
-            font-family: sans-serif;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            display: block;
-            margin-bottom: 40px;
+        .volver { 
+            text-decoration: none; 
+            color: #bbb; 
+            font-family: sans-serif; 
+            font-size: 0.8rem; 
+            display: block; 
+            margin-bottom: 30px; 
+            letter-spacing: 1px;
         }
-
-        .volver:hover { color: #000; }
     </style>
 </head>
 <body>
-
-    <div class="hoja-blanca">
-        <a href="index.html" class="volver">← Volver a la biblioteca</a>
-
+    <div class="hoja">
+        <a href="index.html" class="volver">← VOLVER A BIBLIOTECA</a>
+        
         <img src="Portada del caballero y su armadura oxidada Robert Fisher.jpg" class="portada-doc">
+        
+        <h1>Portada del caballero y su armadura oxidada Robert Fisher</h1>
 
-        <h1>El caballero y su armadura oxidada Robert Fisher</h1>
+        <div class="texto-contenido">
+                      Mi Reseña para este libro es que veces vivimos atrapados en la versión de nosotros mismos que queremos proyectar, creyendo que hacemos el bien mientras abandonamos nuestro verdadero ser. Nos rodeamos de una armadura que, aunque parece protegernos, nos impide sentir lo que de verdad nos hace felices y nos aleja de quienes amamos. Para salir de este encierro, hace falta el coraje de enfrentar nuestras sombras y ser sinceros con nosotros mismos en una batalla que nadie puede luchar en nuestro lugar. Solo al aceptar nuestras imperfecciones y dejar de culpar a los demás por nuestras desgracias, recuperamos el poder sobre nuestra vida y descubrimos que la verdadera libertad es ser, simplemente, amor
 
-        <div class="escribir reseñas aqui 
-">
-            Mi Reseña para este libro es que veces vivimos atrapados en la versión de nosotros mismos que queremos proyectar, creyendo que hacemos el bien mientras abandonamos nuestro verdadero ser. Nos rodeamos de una armadura que, aunque parece protegernos, nos impide sentir lo que de verdad nos hace felices y nos aleja de quienes amamos. Para salir de este encierro, hace falta el coraje de enfrentar nuestras sombras y ser sinceros con nosotros mismos en una batalla que nadie puede luchar en nuestro lugar. Solo al aceptar nuestras imperfecciones y dejar de culpar a los demás por nuestras desgracias, recuperamos el poder sobre nuestra vida y descubrimos que la verdadera libertad es ser, simplemente, amor
 
-            <span class="frase">"Frases del libro que quiero Resaltar."</span>
-
-            El Caballero
+            <div class="frase-especial">
+                El Caballero
 Después de todo, no se puede contentar a todo el mundo
 
 El Caballero y Julieta 
@@ -266,8 +248,13 @@ aunque este Universo poseo, nada poseo, pues no puedo conocer lo desconocido si 
  
 El Caballero 
 “Casi muero por todas las lágrimas que no derramé”
+       
+        
+
+            </div>
+
+            Gracias Por llegar hasta aqui! Me gustan las frases de los libros y aveces se me olvidan por eso decidir hacer esto y hacerlo publico para compartir mi Reseñas y frases que me gustaron 
         </div>
     </div>
-
 </body>
 </html>
