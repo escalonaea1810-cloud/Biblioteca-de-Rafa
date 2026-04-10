@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseña</title>
+    <style>
+        body { background: #ffffff; margin: 0; padding: 0; display: flex; justify-content: center; }
+        
+        .hoja { 
+            width: 100%; 
+            max-width: 750px; 
+            padding: 40px 25px; 
+        }
+
+        .portada-doc { 
+            display: block; 
+            max-width: 250px; 
+            margin: 0 auto 30px; 
+            border-radius: 4px;
+        }
+
+        h1 { 
+            font-family: 'Georgia', serif; 
+            font-size: 2.2rem; 
+            text-align: center; 
+            margin-bottom: 40px;
+        }
+
+        /* ESTO ES LO QUE CORRIGE LOS ESPACIOS */
+        .texto-contenido { 
+            font-family: 'Georgia', serif; 
+            font-size: 1.2rem; 
+            line-height: 1.8; 
+            color: #1a1a1a;
+            /* Esta línea es la clave: respeta espacios y saltos de línea */
+            white-space: pre-wrap; 
+            word-wrap: break-word;
+        }
+
+        .frase-especial {
+            display: block;
+            margin: 30px 0;
+            padding: 20px;
+            border-left: 3px solid #000;
+            background-color: #f9f9f9;
+            font-style: italic;
+            /* También lo aplicamos aquí por si la frase es larga */
+            white-space: pre-wrap; 
+        }
+
+        .volver { 
+            text-decoration: none; 
+            color: #bbb; 
+            font-family: sans-serif; 
+            font-size: 0.8rem; 
+            display: block; 
+            margin-bottom: 30px; 
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hoja">
+        <a href="index.html" class="volver">← VOLVER A BIBLIOTECA</a>
+        
+        <img src="Portada La metamorfosis Franz Kafka.jpg" class="portada-doc">
+        
+        <h1>La metamorfosis Franz Kafka</h1>
+
+        <div class="texto-contenido">
+                      Mi resumen sería que esta no es una obra de terror, como pensé al principio. Gregorio demostró que, a pesar de su estado y de estar convertido en un bicho, seguía pensando en su trabajo y en el sustento de su familia. Esto revela que ya había perdido su identidad por cumplir su rol de proveedor. y En el momento en que su familia lo atosiga junto con su jefe, se nota claramente un capitalismo feroz: para el sistema, el empleado no es un ser humano. Debido a su apariencia, su familia lo exilia y lo desprecia, simplemente porque ya no puede cumplir con su rol de mantenerlos Finalmente, su muerte solo trae un alivio absoluto. El hecho de que salgan a pasear felices tras su fallecimiento confirma que lo querían por lo que hacía y no por quién era. Es una ironía cruel: mientras todos los demás estaban 'sanos', Gregorio era el único que conservaba sentimientos puros, siendo mucho más humano que el resto de su familia
+        </div>
+    </div>
+</body>
+</html>
